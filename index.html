@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices JS</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        Exercice 1 
+        
+        function produit(x,y) {
+            return x*y;
+        }
+        function cube(x) {
+            return x*x*x;
+        }
+        function afficheImg(image) {
+            document.write('<img src="' +image+ '" alt="Image"><br>');
+        }
+        var nb1 = prompt("Entrez un premier nombre :");
+        var nb2 = prompt("Entrez un deuxième nombre :");
+        
+        nb1 = Number(nb1);
+        nb2 = Number(nb2);
+
+        var resultatcube=cube(nb1)
+        var resultatproduit=produit(nb1, nb2);
+
+        afficheImg("papillon.jpg")
+        document.write("Le cube de "+nb1+" est : "+resultatcube+ "<br>");
+        document.write("Le produit de "+nb1+ " et " +nb2+ " est : " +resultatproduit);
+        */
+
+        /*
+        Exercice 2
+        
+        function strtok(str1, str2, n) {
+
+            var tablemots = str1.split(str2);
+            return tablemots[n - 1];
+        }
+
+        var chaine = "Jean,Louis,Paris,75016,18,homme,brun";
+        var separateur = ",";
+        var position = 5;
+        var resultat = strtok(chaine, separateur, position);
+
+        alert("Le mot à la " + position + "ème position est : " + resultat);
+        */
+
+        var taille = prompt("De quelle taille sera votre tableau ?");
+        taille = Number(taille)
+
+        var tableau = [];
+
+        for (var i = 0; i < taille; i++) {
+            var element = prompt("Rentrez l'élément numéro " + (i + 1) + " de votre tableau : ");
+            tableau.push(element);
+        }
+
+        alert("Voici le contenu de votre tableau : " + tableau.join(", "));
+
+
+    </script>
+</body>
+
+</html>
